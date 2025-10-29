@@ -1,3 +1,4 @@
+import gdown
 from ultralytics import YOLO
 import cv2
 import streamlit as st
@@ -7,9 +8,16 @@ import tempfile
 import os
 
 #load model
-model = YOLO('/Users/vinayakkanojia/Desktop/Glove detection/trained models/best.pt')
 
-# print(model.names)
+model_path = "best.pt"
+url = "https://drive.google.com/uc?id=18IDRlZx4LF4TT07AH48LOL_yA9J3URnz"
+
+if not os.path.exists(model_path):
+    print("Downloading model from Google Drive...")
+    gdown.download(url, model_path, quiet=False)
+    print("Model downloaded successfully!")
+
+model = YOLO(model_path)
 
 def predict_frame(frame, confidence_thresh):
     result = model.predict(source=frame, show=False, conf=confidence_thresh)
