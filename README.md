@@ -19,7 +19,7 @@ A computer vision project built using YOLOv11 and Streamlit to detect whether a 
 - Epochs Trained: 49 (best model saved at epoch 37 due to early stopping)
 - Early Stopping Patience: 12
 - Training Duration: ~1 hour on Tesla T4 GPU
-
+- Model Download link [click here](https://drive.google.com/uc?id=18IDRlZx4LF4TT07AH48LOL_yA9J3URnz)
 - ### Validation Results
 
     | Metric | Value |
