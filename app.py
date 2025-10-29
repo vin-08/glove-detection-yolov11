@@ -59,7 +59,7 @@ def predict_frame(frame, confidence_thresh):
 st.title("YOLOv11-Based Glove Detection")
 st.sidebar.header("Toggle settings", divider='rainbow')
 con_thresh = st.sidebar.slider("Select the Confidence threshold value", min_value=0.0, max_value=1.0, step=0.01, value= 0.4)
-img = st.file_uploader("Insert the image here. \n choose it from you local pc", type=['jpg','jpeg','png','mp4','avi'], accept_multiple_files=False)
+img = st.file_uploader("Insert the image or video here. \n choose it from you local pc", type=['jpg','jpeg','png','mp4','avi'], accept_multiple_files=False)
 
 if img is not None:
     print(img)
