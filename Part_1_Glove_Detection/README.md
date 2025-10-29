@@ -36,7 +36,7 @@ A computer vision project built using YOLOv11 and Streamlit to detect whether a 
   - Training remained stable across 49 epochs with minimal overfitting, thanks to proper early stopping (patience=12) and learning rate tuning.
   ![Sample Output](output/sample.png)
   
-# What didm't work:
+# What didn't work:
   - Limited variation in lighting reduced performance in darker scenes.
   - No augmentations led to slightly lower robustness to real-world noise.
     
@@ -68,5 +68,7 @@ A computer vision project built using YOLOv11 and Streamlit to detect whether a 
 5. The app will automatically download the YOLOv11 model (best.pt) from Google Drive and load it.
    - You don’t need to manually download or provide the model path — it’s handled in the code.
    - Once loaded, upload an image/video to test glove detection.
+   - This project does not save annotated images or logs automatically.
+   - The detection results (bounding boxes, confidence scores, and counts) are displayed directly on the Streamlit interface for both image and video   inputs in real time.
   
 
