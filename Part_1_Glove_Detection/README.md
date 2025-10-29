@@ -34,7 +34,7 @@ A computer vision project built using YOLOv11 and Streamlit to detect whether a 
   - Streamlit interface enabled smooth, real-time testing.
   - The model performed well even on unseen images, maintaining high confidence levels in predictions for both glove and no-glove categories.
   - Training remained stable across 49 epochs with minimal overfitting, thanks to proper early stopping (patience=12) and learning rate tuning.
-  ![Sample Output](sample.png)
+  ![Sample Output](output/sample.png)
   
 # What didm't work:
   - Limited variation in lighting reduced performance in darker scenes.
